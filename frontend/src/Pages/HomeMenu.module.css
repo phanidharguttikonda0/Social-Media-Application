@@ -1,0 +1,59 @@
+.homemenu{
+    margin-left: 5%;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.homemenu::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+.popularMovies h5, .trendingMovies h5{
+    position: relative;
+    right: 40%;
+
+}
+.moviess{
+    margin-top: 2%;
+}
+.moviess h5{
+    position: relative;
+    right: 40%;
+    margin-bottom: 1%;
+}
+
+/* HomeMenu.module.css */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+
+/* Style the Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Decrease the width of control to make it less obtrusive */
+    background: none;
+    color: #333; /* Adjust color as needed */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-control-prev {
+    left: -50px; /* Move left control further to the left */
+}
+
+.carousel-control-next {
+    right: -50px; /* Move right control further to the right */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}

@@ -1,0 +1,23 @@
+.navbar{
+    width: 5%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.main{
+    position: fixed;
+    top: 25%;
+    bottom: 25%;
+}
+
+.navbar img{
+    background-color: transparent;
+    width: 50%;
+    margin: 20%;
+    cursor: pointer;
+}
