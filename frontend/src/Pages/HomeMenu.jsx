@@ -7,14 +7,38 @@ import useFetch from './useFetch';
 
 function HomeMenu(props) {
 
-    const trendingMovies = useFetch("https://api.themoviedb.org/3/movie/popular?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4",8) ;
-    const popularMovies = useFetch("https://api.themoviedb.org/3/trending/movie/day?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4",8) ;
-    const topRatedMovies = useFetch("https://api.themoviedb.org/3/movie/top_rated?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4",8) ;
-    const horrorMovies = useFetch("https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_genres=27",8) ;
-    const comedyMovies = useFetch("https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_genres=35",8) ;
-    const romanticMovies = useFetch("https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_genres=10749",8) ;
-    const teluguMovies = useFetch("https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_original_language=te",8) ;
-    const popularTelugu = useFetch("https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_original_language=te&sort_by=popularity.desc&page=3",8)
+    const trendingMovies = useFetch(
+        "https://api.themoviedb.org/3/movie/popular?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&page=1",
+        "https://api.themoviedb.org/3/movie/popular?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&page=2",
+        8) ;
+    const popularMovies = useFetch(
+        "https://api.themoviedb.org/3/trending/movie/day?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&page=1",
+        "https://api.themoviedb.org/3/trending/movie/day?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&page=2",
+        8) ;
+    const topRatedMovies = useFetch(
+        "https://api.themoviedb.org/3/movie/top_rated?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&page=1",
+        "https://api.themoviedb.org/3/movie/top_rated?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&page=2",
+        8) ;
+    const horrorMovies = useFetch(
+        "https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_genres=27&page=1",
+        "https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_genres=27&page=2",
+        8) ;
+    const comedyMovies = useFetch(
+        "https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_genres=35&page=1",
+        "https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_genres=35&page=2",
+        8) ;
+    const romanticMovies = useFetch(
+        "https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_genres=10749&page=1",
+        "https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_genres=10749&page=2",
+        8) ;
+    const teluguMovies = useFetch(
+        "https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_original_language=te&page=1",
+        "https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_original_language=te&page=2",
+        8) ;
+    const popularTelugu = useFetch(
+        "https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_original_language=te&sort_by=popularity.desc&page=3",
+        "https://api.themoviedb.org/3/discover/movie?api_key=38ee7b5f33ca8d57d0c93c66fb8fcac4&with_original_language=te&sort_by=popularity.desc&page=4",
+        8)
     return (
         <div className={css.homemenu}>
             <Adds />
